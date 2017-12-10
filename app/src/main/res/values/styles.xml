@@ -1,0 +1,25 @@
+<resources>
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InfoContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InfoText">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">@dimen/textMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/textMarginLeft</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+</resources>
