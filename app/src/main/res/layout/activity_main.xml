@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,162 +25,168 @@
         android:layout_height="380dp"
         card_view:cardCornerRadius="8dp">
 
-        <!-- Main card view group -->
-        <RelativeLayout
-            android:id="@+id/inner_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-            <!-- Main image -->
-            <com.makeramen.roundedimageview.RoundedImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/main_image"
-                android:contentDescription="@string/main_image"
-                android:src="@drawable/large_image"
+            <!-- Main card view group -->
+            <RelativeLayout
+                android:id="@+id/inner_layout"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                app:riv_corner_radius_top_left="8dp"
-                app:riv_corner_radius_top_right="8dp" />
+                android:layout_height="match_parent">
 
-            <!-- Logo -->
-            <ImageView
-                android:id="@+id/logo"
-                android:contentDescription="@string/logo"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:src="@drawable/logo"
-                android:layout_marginStart="30dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="16dp" />
-
-            <!-- 'Udacity' text -->
-            <TextView
-                android:id="@+id/business_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/business_name"
-                android:shadowColor="@color/textShadow"
-                android:shadowDx="2"
-                android:shadowDy="2"
-                android:shadowRadius="0.01"
-                android:fontFamily="@font/campton_light_demo"
-                android:textAllCaps="true"
-                android:letterSpacing="0.3"
-                android:textSize="12sp"
-                android:textColor="#ffffff"
-                android:layout_alignTop="@+id/main_image"
-                android:layout_below="@+id/logo"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="64dp" />
-
-            <!-- Info container -->
-            <LinearLayout
-                android:id="@+id/info_container"
-                style="@style/InfoContainer"
-                android:layout_below="@+id/main_image"
-                android:layout_alignParentBottom="true"
-                android:orientation="vertical">
-
-                <!-- First line of contact details (company address) -->
-                <LinearLayout
-                    android:id="@+id/contact_details_1"
+                <!-- Main image -->
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/main_image"
+                    android:contentDescription="@string/main_image"
+                    android:src="@drawable/large_image"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp">
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius_top_left="8dp"
+                    app:riv_corner_radius_top_right="8dp" />
 
-                    <!-- Company address text with an icon -->
-                    <TextView
-                        android:id="@+id/company_address"
-                        android:drawableStart="@drawable/address_icon"
-                        android:drawablePadding="8dp"
-                        android:text="@string/company_address"
-                        style="@style/InfoText"
-                        android:layout_width="wrap_content" />
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:contentDescription="@string/logo"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo"
+                    android:layout_marginStart="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="16dp" />
+
+                <!-- 'Udacity' text -->
+                <TextView
+                    android:id="@+id/business_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_name"
+                    android:shadowColor="@color/textShadow"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="0.01"
+                    android:fontFamily="@font/campton_light_demo"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.3"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:layout_alignTop="@+id/main_image"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="64dp" />
+
+                <!-- Info container -->
+                <LinearLayout
+                    android:id="@+id/info_container"
+                    style="@style/InfoContainer"
+                    android:layout_below="@+id/main_image"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <!-- First line of contact details (company address) -->
+                    <LinearLayout
+                        android:id="@+id/contact_details_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp">
+
+                        <!-- Company address text with an icon -->
+                        <TextView
+                            android:id="@+id/company_address"
+                            android:drawableStart="@drawable/address_icon"
+                            android:drawablePadding="8dp"
+                            android:text="@string/company_address"
+                            style="@style/InfoText"
+                            android:layout_width="wrap_content" />
+
+                    </LinearLayout>
+
+                    <!-- Second line of contact details (email address & phone number) -->
+                    <LinearLayout
+                        android:id="@+id/contact_details_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <!-- Phone text with an icon -->
+                        <TextView
+                            android:id="@+id/phone_number"
+                            android:drawableStart="@drawable/phone_icon"
+                            android:drawablePadding="8dp"
+                            android:text="@string/phone_number"
+                            android:autoLink="phone"
+                            style="@style/InfoText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <!-- Website address with an icon -->
+                        <TextView
+                            android:id="@+id/website"
+                            android:drawableStart="@drawable/website_icon"
+                            android:drawablePadding="8dp"
+                            android:text="@string/website"
+                            android:autoLink="web"
+                            style="@style/InfoText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <!-- Third line of contact details (facebook) -->
+                    <LinearLayout
+                        android:id="@+id/contact_details_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp">
+
+                        <!-- Facebook text with an icon -->
+                        <TextView
+                            android:id="@+id/facebook"
+                            android:drawableStart="@drawable/facebook_icon"
+                            android:drawablePadding="8dp"
+                            android:text="@string/facebook"
+                            android:autoLink="web"
+                            style="@style/InfoText"
+                            android:layout_width="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <!-- Fourth line of contact details (twitter) -->
+                    <LinearLayout
+                        android:id="@+id/contact_details_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp">
+
+                        <!-- Twitter text with an icon -->
+                        <TextView
+                            android:id="@+id/twitter"
+                            android:drawableStart="@drawable/twitter_icon"
+                            android:drawablePadding="8dp"
+                            android:text="@string/twitter"
+                            android:autoLink="web"
+                            style="@style/InfoText"
+                            android:layout_width="wrap_content"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <!-- Second line of contact details (email address & phone number) -->
-                <LinearLayout
-                    android:id="@+id/contact_details_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+            </RelativeLayout>
 
-                    <!-- Phone text with an icon -->
-                    <TextView
-                        android:id="@+id/phone_number"
-                        android:drawableStart="@drawable/phone_icon"
-                        android:drawablePadding="8dp"
-                        android:text="@string/phone_number"
-                        android:autoLink="phone"
-                        style="@style/InfoText"
-                        android:layout_width="0dp"
-                        android:layout_weight="1" />
-
-                    <!-- Website address with an icon -->
-                    <TextView
-                        android:id="@+id/website"
-                        android:drawableStart="@drawable/website_icon"
-                        android:drawablePadding="8dp"
-                        android:text="@string/website"
-                        android:autoLink="web"
-                        style="@style/InfoText"
-                        android:layout_width="0dp"
-                        android:layout_weight="1" />
-
-                </LinearLayout>
-
-                <!-- Third line of contact details (facebook) -->
-                <LinearLayout
-                    android:id="@+id/contact_details_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="12dp">
-
-                    <!-- Facebook text with an icon -->
-                    <TextView
-                        android:id="@+id/facebook"
-                        android:drawableStart="@drawable/facebook_icon"
-                        android:drawablePadding="8dp"
-                        android:text="@string/facebook"
-                        android:autoLink="web"
-                        style="@style/InfoText"
-                        android:layout_width="wrap_content"/>
-
-                </LinearLayout>
-
-                <!-- Fourth line of contact details (twitter) -->
-                <LinearLayout
-                    android:id="@+id/contact_details_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="12dp">
-
-                    <!-- Twitter text with an icon -->
-                    <TextView
-                        android:id="@+id/twitter"
-                        android:drawableStart="@drawable/twitter_icon"
-                        android:drawablePadding="8dp"
-                        android:text="@string/twitter"
-                        android:autoLink="web"
-                        style="@style/InfoText"
-                        android:layout_width="wrap_content"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </RelativeLayout>
+        </ScrollView>
 
     </android.support.v7.widget.CardView>
 </RelativeLayout>
