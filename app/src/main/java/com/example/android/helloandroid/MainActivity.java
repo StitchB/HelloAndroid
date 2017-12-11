@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Remove underlines from links
-        TextView phoneNumber;
-        phoneNumber = findViewById(R.id.phone_number);
-        if(phoneNumber != null) {
-            StringUtil.removeUnderlines((Spannable)phoneNumber.getText());
-        }
         TextView website;
         website = findViewById(R.id.website);
         if(website != null) {
