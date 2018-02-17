@@ -1,1 +1,1 @@
-Google Developer Challenge Scholarship: Android Basics - HelloAndroid App (Project #1)
+Android Basics By Google Nanodegree program - Single Screen App (Project #1)
