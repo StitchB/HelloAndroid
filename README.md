@@ -12,7 +12,7 @@ Single Screen App (Project #1) for Google Developer Challenge Scholarship: Andro
       <li>650-555-5555</li>
     </ul>  
   </li>
-  <li>Design includes at least one image that the student feels represents the business in some way (creativity is fine, and encouraged!)</li>
+  <li>Design includes at least one image that the student feels represents the business in some way (creativity is fine, and encouraged!)</ul>
 
 <strong>Code Requirements</strong>
 <ul>
