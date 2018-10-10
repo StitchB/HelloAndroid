@@ -22,7 +22,7 @@ Single Screen App (Project #1) for Google Developer Challenge Scholarship: Andro
   <li>The project must have one or more ImageViews and TextViews</li>
 </ul>  
 
-<em>Requirements copied from: <a target="_blank" href="http://udacity.com">udacity.com</a>.</em>
+<em>Requirements copied from: <a href="http://udacity.com/?target=_blank">udacity.com</a>.</em>
 
 <br />
 <p align="center"> 
