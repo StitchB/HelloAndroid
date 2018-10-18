@@ -1,6 +1,6 @@
 # Hello Android
 
-Single Screen App (Project #1) for Google Developer Challenge Scholarship: Android Basics
+Single Screen App (Project #1) for Google Developer Challenge Scholarship: Android Basics / Android Basics by Google Nanodegree Program 
 
 <strong>Design Requirements</strong>
 <ul>
